@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #0477b5;
+    --success-color: #078263;
+    --white-color: #f7f7f7;
+    --secondary-color: #c25c13;
+    --black-color: #333;
+
+    --transition: all 0.25s ease-in-out;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.app{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.centeralize{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.firstBg{
+    background-color: var(--main-color);
+}
+
+.secondBg{
+    background-color: var(--success-color);
+}
+
+.footer{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--black-color);
+}
+
+.footer p{
+    text-align: center;
+    color: var(--white-color);
+    font-size: 15px;
+}

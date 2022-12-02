@@ -1,0 +1,48 @@
+.menu-card{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    max-width: 375px;
+    width: 100%;
+    min-height: 600px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    transform: translateX(150%);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.menu-card.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-close{
+    width: 100%;
+    padding: 15px;
+}
+
+.menu-close i{
+    color: var(--white-color);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.menu-links{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-link{
+    padding: 10px;
+    border-bottom: 1px dotted var(--white-color);
+    margin: 15px;
+}
+
+.menu-link-text{
+    font-size: 17px;
+    color: var(--white-color);
+}
